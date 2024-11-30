@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Crawler</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Crawler</h1>
+        <div class="input-container">
+            <input type="url" id="urlInput" placeholder="Enter URL to crawl (e.g., https://example.com)" required>
+            <button id="crawlButton">Start Crawling</button>
+        </div>
+        <div class="results-container">
+            <div class="progress-bar" id="progressBar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div id="status">Ready to crawl</div>
+            <div class="results-table">
+                <table id="urlTable">
+                    <thead>
+                        <tr>
+                            <th>URL</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody id="urlTableBody"></tbody>
+                </table>
+            </div>
+            <button id="downloadButton" disabled>Download Results</button>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 Web Crawler. Desarrollado por: Exequiel Martinez. All rights reserved.</p>
+</footer>
+</html>
